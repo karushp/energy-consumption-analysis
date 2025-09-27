@@ -156,8 +156,6 @@ data/external/*.csv
 ehthumbs.db
 Thumbs.db
 
-# Jupyter
-*.ipynb
 
 # Temporary files
 tmp/
