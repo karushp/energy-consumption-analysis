@@ -132,13 +132,6 @@ checkpoints/
 logs/
 tensorboard_logs/
 
-# Data files (keep structure but ignore large files)
-data/raw/*.csv
-data/processed/*.csv
-data/external/*.csv
-*.csv
-*.json
-*.parquet
 
 # IDE
 .vscode/
