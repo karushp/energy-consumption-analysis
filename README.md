@@ -18,10 +18,12 @@ This project demonstrates advanced data science and machine learning techniques 
 **Dataset Credit**: This project uses the Energy Consumption Prediction dataset created by [mrsimple07](https://www.kaggle.com/mrsimple07) on Kaggle. We acknowledge and thank the original author for providing this valuable dataset for research and educational purposes.
 
 **Dataset Features**:
-- **Size**: 1,000+ hourly energy consumption records
-- **Time Period**: 2022 data
+- **Size**: 8,760 hourly energy consumption records (full year)
+- **Time Period**: Complete 2022 data (January 1 - December 31)
 - **Features**: Temperature, Humidity, Square Footage, Occupancy, HVAC Usage, Lighting Usage, Renewable Energy, Day of Week, Holiday status
 - **Target**: Energy Consumption (kWh)
+- **Weather Patterns**: Japanese climate data with seasonal variations
+- **Holiday Calendar**: Japanese national holidays and Sundays marked
 
 ## Key Features
 
@@ -50,6 +52,28 @@ This project demonstrates advanced data science and machine learning techniques 
 - **Risk assessment** and mitigation strategies
 - **Implementation roadmap** with success metrics
 
+## Dashboard
+
+Interactive dashboard showcasing energy consumption insights, predictions, and optimization recommendations:
+
+### Dashboard Overview
+
+![Dashboard Page 1](dashboard/page_1.png)
+
+![Dashboard Page 2](dashboard/page_2.png)
+
+![Dashboard Page 3](dashboard/page_3.png)
+
+![Dashboard Page 4](dashboard/page_4.png)
+
+The dashboard provides:
+- **Real-time energy consumption monitoring**
+- **Predictive analytics** with forecasted consumption
+- **Feature importance visualization**
+- **Optimization recommendations** based on ML insights
+- **Cost analysis** and ROI projections
+- **Temporal pattern analysis** (hourly, daily, weekly trends)
+
 ## Technology Stack
 
 - **Data Processing**: Pandas, NumPy, SciPy
@@ -63,16 +87,22 @@ This project demonstrates advanced data science and machine learning techniques 
 ```
 energy-consumption/
 ├── data/
-│   ├── Energy_consumption.csv     # Original dataset
-│   └── processed/                 # Cleaned and engineered features
+│   ├── Energy_consumption.csv           # Original dataset
+│   ├── Energy_consumption_full_year.csv # Full year dataset
+│   └── processed/                       # Cleaned and engineered features
+├── dashboard/
+│   ├── page_1.png                       # Dashboard screenshots
+│   ├── page_2.png
+│   ├── page_3.png
+│   ├── page_4.png
+│   └── Energy-Consumption-Dashboard.pdf # Dashboard PDF
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_feature_engineering.ipynb
 │   ├── 03_model_development.ipynb
-│   ├── 04_model_evaluation.ipynb
-│   └── 05_business_insights.ipynb
-├── models/                        # Trained model artifacts
-├── results/                       # Analysis results and reports
+│   └── 04_model_evaluation.ipynb
+├── models/                              # Trained model artifacts
+├── results/                             # Analysis results and reports
 └── requirements.txt
 ```
 
